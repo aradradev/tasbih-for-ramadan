@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: url(img/ramadan-4206409_1920.jpg) no-repeat center center/ cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Asap', sans-serif;
+}
+.main{
+    min-width: 50%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 3px;
+    border-radius: 1.1vw;
+}
+.title{
+    font-family: 'Dancing Script', cursive;
+    margin: .8rem auto;
+    padding: 1.2rem;
+    opacity: .5;
+    color: orange;
+    background-color: #fff;
+    box-shadow: 0 0 3px;
+    border-radius: 1.1vw;
+}
+.counter{
+    padding: 1.1vw;
+}
+.count{
+    padding: .9rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    background-color: #e0dada;
+    border-radius: .5rem;
+    transition: .5s;
+    font-size: 2.2rem;
+    animation: animate ease-in-out .2s;
+}
+@keyframes animate {
+    from{
+        opacity: 0;
+        top: 23px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.buttons i{
+    margin: 2rem 1.2rem;
+    font-size: 1.6rem;
+}
+button{
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.1vw;
+    margin-bottom: 1.2rem;
+}
+#count{
+    margin-right: 1rem;
+    color: #7cf10f;
+    border: 2px solid #7cf10f;
+    transition: .4s;
+}
+#count:hover{
+    border: 2px solid #c8cec3;
+    background-color: #7cf10f;
+    color: #fff;
+}
+#restart{
+    margin-right: 1rem;
+    color: #f14f0f;
+    border: 2px solid #f14f0f;
+    transition: .4s;
+}
+#restart:hover{
+    border: 2px solid #c8cec3;
+    background-color: #f14f0f;
+    color: #fff;
+}
+
+footer{
+    color: #fff;
+    margin-top: 1.2rem;
+}
+footer a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(241, 17, 17);
+    transition: .3s;
+    /* font-family: 'Dancing Script', cursive; */
+}
+a:hover{
+    color: orange;
+}
